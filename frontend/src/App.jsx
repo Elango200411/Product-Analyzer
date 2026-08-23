@@ -15,10 +15,11 @@ function currentRoute() {
 }
 
 const PRODUCT_KEY = 'pa-product'
+const SHARED_PRODUCT_KEY = 'pa-product-shared'
 
 function loadStoredProduct() {
   try {
-    const raw = sessionStorage.getItem(PRODUCT_KEY)
+    const raw = sessionStorage.getItem(PRODUCT_KEY) || localStorage.getItem(SHARED_PRODUCT_KEY)
     return raw ? JSON.parse(raw) : null
   } catch {
     return null
@@ -32,8 +33,13 @@ function AppContent() {
   const setProduct = (item) => {
     setProductState(item)
     try {
-      if (item) sessionStorage.setItem(PRODUCT_KEY, JSON.stringify(item))
-      else sessionStorage.removeItem(PRODUCT_KEY)
+      if (item) {
+        sessionStorage.setItem(PRODUCT_KEY, JSON.stringify(item))
+        localStorage.setItem(SHARED_PRODUCT_KEY, JSON.stringify(item))
+      } else {
+        sessionStorage.removeItem(PRODUCT_KEY)
+        localStorage.removeItem(SHARED_PRODUCT_KEY)
+      }
     } catch { /* storage unavailable */ }
   }
 
@@ -54,7 +60,8 @@ function AppContent() {
 
   const handlePreview = (item) => {
     setProduct(item)
-    navigate('preview')
+    const win = window.open('#/preview', '_blank')
+    if (!win) navigate('preview')
   }
 
   const effectivePage =
