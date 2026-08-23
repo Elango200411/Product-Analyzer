@@ -1,4 +1,5 @@
 import json
+import os
 import re
 import uuid
 from datetime import datetime, timezone
@@ -12,8 +13,9 @@ from agents.pipeline import AnalysisPipeline
 
 router = APIRouter()
 
-UPLOAD_DIR = Path("data/documents")
-PRODUCT_DIR = Path("data/products")
+DATA_DIR = Path(os.getenv("DATA_DIR", "data"))
+UPLOAD_DIR = DATA_DIR / os.getenv("UPLOAD_DIR_NAME", "documents")
+PRODUCT_DIR = DATA_DIR / os.getenv("PRODUCTS_DIR_NAME", "products")
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 PRODUCT_DIR.mkdir(parents=True, exist_ok=True)
 
