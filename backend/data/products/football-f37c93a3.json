@@ -1,0 +1,26 @@
+{
+  "name": "Football",
+  "brand": null,
+  "category": null,
+  "price": null,
+  "currency": "USD",
+  "rating": 3.7,
+  "review_count": 1482,
+  "description": "Football is a general product available through retail catalogs.",
+  "ingredients": [],
+  "tags": [
+    "football"
+  ],
+  "quality_score": 0.4,
+  "is_valid": true,
+  "errors": [],
+  "issues": [
+    "missing field: category"
+  ],
+  "sources": [
+    "catalog",
+    "reviews"
+  ],
+  "id": "football-f37c93a3",
+  "analyzed_at": "2026-08-23T05:15:27.771906+00:00"
+}
