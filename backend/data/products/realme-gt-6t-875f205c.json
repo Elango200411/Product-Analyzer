@@ -1,0 +1,26 @@
+{
+  "name": "Realme Gt 6T",
+  "brand": null,
+  "category": null,
+  "price": null,
+  "currency": "USD",
+  "rating": 3.5,
+  "review_count": 1010,
+  "description": "realme gt 6t listed under general category.",
+  "ingredients": [],
+  "tags": [
+    "realme"
+  ],
+  "quality_score": 0.4,
+  "is_valid": true,
+  "errors": [],
+  "issues": [
+    "missing field: category"
+  ],
+  "sources": [
+    "catalog",
+    "reviews"
+  ],
+  "id": "realme-gt-6t-875f205c",
+  "analyzed_at": "2026-08-22T13:31:53.844267+00:00"
+}

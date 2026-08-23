@@ -1,0 +1,29 @@
+{
+  "name": "Apple Wireless Headphones $199",
+  "brand": "Apple",
+  "category": "electronics",
+  "price": 199.0,
+  "currency": "USD",
+  "rating": 4.3,
+  "review_count": 2683,
+  "description": "Apple Wireless Headphones $199 listed under electronics category.",
+  "ingredients": [],
+  "tags": [
+    "electronics",
+    "apple",
+    "wireless",
+    "headphones",
+    "$199"
+  ],
+  "quality_score": 1.0,
+  "is_valid": true,
+  "errors": [],
+  "issues": [],
+  "sources": [
+    "catalog",
+    "reviews",
+    "pricing_feed"
+  ],
+  "id": "apple-wireless-headphones-199-f7f2a57f",
+  "analyzed_at": "2026-08-22T14:26:03.685083+00:00"
+}

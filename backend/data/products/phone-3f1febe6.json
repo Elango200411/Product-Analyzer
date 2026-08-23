@@ -1,0 +1,25 @@
+{
+  "name": "Phone",
+  "brand": null,
+  "category": "electronics",
+  "price": null,
+  "currency": "USD",
+  "rating": 4.9,
+  "review_count": 2569,
+  "description": "phone listed under electronics category.",
+  "ingredients": [],
+  "tags": [
+    "electronics",
+    "phone"
+  ],
+  "quality_score": 0.65,
+  "is_valid": true,
+  "errors": [],
+  "issues": [],
+  "sources": [
+    "catalog",
+    "reviews"
+  ],
+  "id": "phone-3f1febe6",
+  "analyzed_at": "2026-08-22T14:01:56.870168+00:00"
+}

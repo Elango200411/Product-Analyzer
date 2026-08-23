@@ -1,0 +1,29 @@
+{
+  "name": "Sony Wireless Headphones $149",
+  "brand": "Sony",
+  "category": "electronics",
+  "price": 149.0,
+  "currency": "USD",
+  "rating": 4.2,
+  "review_count": 2472,
+  "description": "Sony Wireless Headphones $149 listed under electronics category.",
+  "ingredients": [],
+  "tags": [
+    "electronics",
+    "sony",
+    "wireless",
+    "headphones",
+    "$149"
+  ],
+  "quality_score": 1.0,
+  "is_valid": true,
+  "errors": [],
+  "issues": [],
+  "sources": [
+    "catalog",
+    "reviews",
+    "pricing_feed"
+  ],
+  "id": "sony-wireless-headphones-149-1c3befce",
+  "analyzed_at": "2026-08-22T13:52:51.667134+00:00"
+}

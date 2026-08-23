@@ -1,0 +1,27 @@
+{
+  "name": "Logitech Wireless Mouse",
+  "brand": "Logitech",
+  "category": "electronics",
+  "price": null,
+  "currency": "USD",
+  "rating": 4.7,
+  "review_count": 2877,
+  "description": "Logitech Wireless Mouse listed under electronics category.",
+  "ingredients": [],
+  "tags": [
+    "electronics",
+    "logitech",
+    "wireless",
+    "mouse"
+  ],
+  "quality_score": 0.85,
+  "is_valid": true,
+  "errors": [],
+  "issues": [],
+  "sources": [
+    "catalog",
+    "reviews"
+  ],
+  "id": "logitech-wireless-mouse-6b086969",
+  "analyzed_at": "2026-08-22T14:02:24.788286+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Americsa",
+  "brand": null,
+  "category": null,
+  "price": null,
+  "currency": "USD",
+  "rating": 4.5,
+  "review_count": 55,
+  "description": "americsa listed under general category.",
+  "ingredients": [],
+  "tags": [
+    "americsa"
+  ],
+  "quality_score": 0.4,
+  "is_valid": true,
+  "errors": [],
+  "issues": [
+    "missing field: category"
+  ],
+  "sources": [
+    "catalog",
+    "reviews"
+  ],
+  "id": "americsa-557e16e4",
+  "analyzed_at": "2026-08-22T14:01:45.834692+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Sony Wh-1000Xm5",
+  "brand": "Sony",
+  "category": null,
+  "price": null,
+  "currency": "USD",
+  "rating": 3.5,
+  "review_count": 65,
+  "description": "Sony WH-1000XM5 listed under general category.",
+  "ingredients": [],
+  "tags": [
+    "sony",
+    "wh-1000xm5"
+  ],
+  "quality_score": 0.6,
+  "is_valid": true,
+  "errors": [],
+  "issues": [
+    "missing field: category"
+  ],
+  "sources": [
+    "catalog",
+    "reviews"
+  ],
+  "id": "sony-wh-1000xm5-289129c7",
+  "analyzed_at": "2026-08-22T14:16:51.105250+00:00"
+}
