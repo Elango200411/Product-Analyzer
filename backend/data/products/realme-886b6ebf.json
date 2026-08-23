@@ -1,0 +1,26 @@
+{
+  "name": "Realme",
+  "brand": null,
+  "category": null,
+  "price": null,
+  "currency": "USD",
+  "rating": 3.7,
+  "review_count": 2777,
+  "description": "Realme is a general product available through retail catalogs.",
+  "ingredients": [],
+  "tags": [
+    "realme"
+  ],
+  "quality_score": 0.4,
+  "is_valid": true,
+  "errors": [],
+  "issues": [
+    "missing field: category"
+  ],
+  "sources": [
+    "catalog",
+    "reviews"
+  ],
+  "id": "realme-886b6ebf",
+  "analyzed_at": "2026-08-23T09:09:37.079765+00:00"
+}

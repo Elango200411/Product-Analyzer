@@ -1,0 +1,27 @@
+{
+  "name": "Test Product",
+  "brand": null,
+  "category": null,
+  "price": null,
+  "currency": "USD",
+  "rating": 4.3,
+  "review_count": 2293,
+  "description": "Test Product is a general product available through retail catalogs.",
+  "ingredients": [],
+  "tags": [
+    "test",
+    "product"
+  ],
+  "quality_score": 0.4,
+  "is_valid": true,
+  "errors": [],
+  "issues": [
+    "missing field: category"
+  ],
+  "sources": [
+    "catalog",
+    "reviews"
+  ],
+  "id": "test-product-81836ce5",
+  "analyzed_at": "2026-08-23T08:29:25.354868+00:00"
+}

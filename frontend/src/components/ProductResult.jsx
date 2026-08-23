@@ -82,7 +82,7 @@ function ProductResult({ product }) {
               <span
                 className={`quality-item-dot ${product[field] ? 'filled' : 'empty'}`}
               />
-              <span>{field}</span>
+              <span>{t.results.fields[field]}</span>
             </div>
           ))}
         </div>

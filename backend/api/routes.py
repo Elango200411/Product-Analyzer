@@ -71,3 +71,49 @@ async def get_product(product_id: str):
         return {"success": False, "error": "not found"}
     with open(target, encoding="utf-8") as f:
         return {"success": True, "product": json.load(f)}
+
+
+@router.delete("/products/{product_id}")
+async def delete_product(product_id: str):
+    slug = _slugify(product_id)
+    exact = PRODUCT_DIR / f"{product_id}.json"
+    targets = [exact] if exact.exists() else sorted(PRODUCT_DIR.glob(f"{slug}*.json"))
+    if not targets:
+        return {"success": False, "error": "not found"}
+    removed = 0
+    for target in targets[:1]:
+        try:
+            target.unlink()
+            removed += 1
+        except OSError:
+            pass
+    return {"success": removed > 0, "removed": removed}
+
+
+@router.get("/stats")
+async def get_stats():
+    products = []
+    for path in sorted(PRODUCT_DIR.glob("*.json")):
+        try:
+            with open(path, encoding="utf-8") as f:
+                products.append(json.load(f))
+        except (json.JSONDecodeError, OSError):
+            continue
+
+    total = len(products)
+    avg_quality = (
+        sum(float(p.get("quality_score") or 0) for p in products) / total
+        if total else 0.0
+    )
+    valid = sum(1 for p in products if p.get("is_valid"))
+    categories = {}
+    for p in products:
+        cat = p.get("category") or "general"
+        categories[cat] = categories.get(cat, 0) + 1
+
+    return {
+        "total": total,
+        "avg_quality": round(avg_quality, 2),
+        "valid": valid,
+        "categories": categories,
+    }

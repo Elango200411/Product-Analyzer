@@ -1,0 +1,28 @@
+{
+  "name": "Dove Soap $2.50",
+  "brand": "Dove",
+  "category": "personal_care",
+  "price": 2.5,
+  "currency": "USD",
+  "rating": 4.8,
+  "review_count": 2583,
+  "description": "Dove Soap $2.50 is a personal care product available through retail catalogs.",
+  "ingredients": [],
+  "tags": [
+    "personal_care",
+    "dove",
+    "soap",
+    "2.50"
+  ],
+  "quality_score": 1.0,
+  "is_valid": true,
+  "errors": [],
+  "issues": [],
+  "sources": [
+    "catalog",
+    "reviews",
+    "pricing_feed"
+  ],
+  "id": "dove-soap-2-50-94d0298b",
+  "analyzed_at": "2026-08-23T10:30:14.893599+00:00"
+}

@@ -1,15 +1,17 @@
 {
-  "name": "Americsa",
+  "name": "Realme Gt 6T",
   "brand": null,
   "category": null,
   "price": null,
   "currency": "USD",
-  "rating": 4.5,
-  "review_count": 55,
-  "description": "americsa listed under general category.",
+  "rating": 3.5,
+  "review_count": 1010,
+  "description": "Realme Gt 6T is a general product available through retail catalogs.",
   "ingredients": [],
   "tags": [
-    "americsa"
+    "realme",
+    "gt",
+    "6t"
   ],
   "quality_score": 0.4,
   "is_valid": true,
@@ -21,6 +23,6 @@
     "catalog",
     "reviews"
   ],
-  "id": "americsa-557e16e4",
-  "analyzed_at": "2026-08-22T14:01:45.834692+00:00"
+  "id": "realme-gt-6t-b03f1399",
+  "analyzed_at": "2026-08-23T09:09:13.039778+00:00"
 }

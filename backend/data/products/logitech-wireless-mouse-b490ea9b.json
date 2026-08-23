@@ -1,0 +1,27 @@
+{
+  "name": "Logitech Wireless Mouse",
+  "brand": "Logitech",
+  "category": "electronics",
+  "price": null,
+  "currency": "USD",
+  "rating": 4.7,
+  "review_count": 2877,
+  "description": "Logitech Wireless Mouse is a electronics product available through retail catalogs.",
+  "ingredients": [],
+  "tags": [
+    "electronics",
+    "logitech",
+    "wireless",
+    "mouse"
+  ],
+  "quality_score": 0.85,
+  "is_valid": true,
+  "errors": [],
+  "issues": [],
+  "sources": [
+    "catalog",
+    "reviews"
+  ],
+  "id": "logitech-wireless-mouse-b490ea9b",
+  "analyzed_at": "2026-08-23T09:06:49.311983+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Nestle Milk Chocolate Bar",
+  "brand": "Nestle",
+  "category": "snacks",
+  "price": null,
+  "currency": "USD",
+  "rating": 4.5,
+  "review_count": 1715,
+  "description": "Nestle Milk Chocolate Bar is a snacks product available through retail catalogs.",
+  "ingredients": [],
+  "tags": [
+    "snacks",
+    "nestle",
+    "milk",
+    "chocolate",
+    "bar"
+  ],
+  "quality_score": 0.85,
+  "is_valid": true,
+  "errors": [],
+  "issues": [],
+  "sources": [
+    "catalog",
+    "reviews"
+  ],
+  "id": "nestle-milk-chocolate-bar-4f3559f8",
+  "analyzed_at": "2026-08-23T09:17:53.167021+00:00"
+}

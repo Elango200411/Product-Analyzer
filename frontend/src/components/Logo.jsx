@@ -10,53 +10,42 @@ function Logo({ size = 38 }) {
       aria-label="ProductAnalyzer logo"
     >
       <defs>
-        <linearGradient id="pa-bg" x1="6" y1="4" x2="58" y2="60" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#4F46E5" />
-          <stop offset="52%" stopColor="#7C3AED" />
-          <stop offset="100%" stopColor="#0891B2" />
+        <linearGradient id="paTile" x1="10" y1="6" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stopColor="#6366F1" />
+          <stop offset="55%" stopColor="#7C3AED" />
+          <stop offset="100%" stopColor="#8B5CF6" />
         </linearGradient>
-        <radialGradient id="pa-sheen" cx="0.28" cy="0.18" r="0.9">
-          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.22" />
-          <stop offset="55%" stopColor="#FFFFFF" stopOpacity="0" />
-        </radialGradient>
-        <linearGradient id="pa-mark" x1="20" y1="16" x2="44" y2="48" gradientUnits="userSpaceOnUse">
+        <linearGradient id="paGlass" x1="20" y1="18" x2="36" y2="36" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stopColor="#FFFFFF" />
           <stop offset="100%" stopColor="#E0E7FF" />
         </linearGradient>
-        <filter id="pa-shadow" x="-8" y="-6" width="80" height="80">
-          <feDropShadow dx="0" dy="2.5" stdDeviation="3.5" floodColor="#1E1B4B" floodOpacity="0.5" />
-        </filter>
+        <radialGradient id="paSheen" cx="0.3" cy="0.16" r="0.95">
+          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.18" />
+          <stop offset="60%" stopColor="#FFFFFF" stopOpacity="0" />
+        </radialGradient>
       </defs>
 
-      {/* App tile */}
-      <rect x="3" y="3" width="58" height="58" rx="15" fill="url(#pa-bg)" filter="url(#pa-shadow)" />
-      {/* Soft sheen */}
-      <rect x="3" y="3" width="58" height="58" rx="15" fill="url(#pa-sheen)" />
-      {/* Inner depth ring */}
+      {/* Tile */}
+      <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#paTile)" />
+      <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#paSheen)" />
       <rect
-        x="5.75" y="5.75" width="52.5" height="52.5" rx="12.5"
-        stroke="#FFFFFF" strokeOpacity="0.14" strokeWidth="1.5" fill="none"
+        x="6.5" y="6.5" width="51" height="51" rx="13.5"
+        stroke="#FFFFFF" strokeOpacity="0.12" strokeWidth="1.5" fill="none"
       />
 
-      {/* Magnifier lens */}
-      <circle cx="26" cy="26" r="9.75" stroke="url(#pa-mark)" strokeWidth="3.1" fill="none" />
-      {/* Lens glass tint */}
-      <circle cx="26" cy="26" r="9.75" fill="#FFFFFF" fillOpacity="0.08" />
-      {/* Handle */}
+      {/* Magnifier */}
+      <circle cx="27" cy="26" r="10" stroke="url(#paGlass)" strokeWidth="3" fill="none" />
       <line
-        x1="33.4" y1="33.4" x2="40.6" y2="40.6"
-        stroke="url(#pa-mark)" strokeWidth="3.6" strokeLinecap="round"
-      />
-      {/* Verified check inside lens */}
-      <path
-        d="M21.9 26.4l2.8 2.8 5.3-6"
-        stroke="url(#pa-mark)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"
+        x1="35" y1="34" x2="42.5" y2="41.5"
+        stroke="url(#paGlass)" strokeWidth="3.4" strokeLinecap="round"
       />
 
-      {/* Growth bars */}
-      <rect x="42.5" y="40" width="4" height="6.5" rx="1.3" fill="url(#pa-mark)" opacity="0.95" />
-      <rect x="47.75" y="36" width="4" height="10.5" rx="1.3" fill="url(#pa-mark)" opacity="0.72" />
-      <rect x="53" y="31.5" width="4" height="15" rx="1.3" fill="url(#pa-mark)" opacity="0.5" />
+      {/* Analytics trend inside lens */}
+      <path
+        d="M21.8 30l3.4-4 2.9 2.6 4.9-6"
+        stroke="#FFFFFF" strokeWidth="2.3" strokeLinecap="round" strokeLinejoin="round" fill="none"
+      />
+      <circle cx="33" cy="22.6" r="1.5" fill="#FFFFFF" />
     </svg>
   )
 }

@@ -81,9 +81,15 @@ function ResultsPage({ product, onBack, onPreview }) {
           <button className="btn btn-ghost btn-sm" onClick={() => { copyShareLink(product); showToast(t.results.linkCopied) }}>
             {t.results.share}
           </button>
-          <button className="btn btn-primary btn-sm" onClick={() => onPreview && onPreview(product)}>
+          <a
+            className="btn btn-primary btn-sm"
+            href="#/preview"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => onPreview && onPreview(product)}
+          >
             {t.results.fullPreview}
-          </button>
+          </a>
         </div>
       </div>
 

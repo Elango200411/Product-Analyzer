@@ -5,9 +5,10 @@ import LandingPage from './components/LandingPage.jsx'
 import AnalyzerPage from './components/AnalyzerPage.jsx'
 import ResultsPage from './components/ResultsPage.jsx'
 import HistoryPage from './components/HistoryPage.jsx'
+import ComparePage from './components/ComparePage.jsx'
 import PreviewPage from './components/PreviewPage.jsx'
 
-const ROUTES = ['landing', 'analyzer', 'history', 'results', 'preview']
+const ROUTES = ['landing', 'analyzer', 'history', 'results', 'preview', 'compare']
 
 function currentRoute() {
   const h = window.location.hash.replace(/^#\/?/, '')
@@ -16,6 +17,7 @@ function currentRoute() {
 
 const PRODUCT_KEY = 'pa-product'
 const SHARED_PRODUCT_KEY = 'pa-product-shared'
+const COMPARE_KEY = 'pa-compare'
 
 function loadStoredProduct() {
   try {
@@ -26,9 +28,20 @@ function loadStoredProduct() {
   }
 }
 
+function loadCompareItems() {
+  try {
+    const raw = sessionStorage.getItem(COMPARE_KEY) || localStorage.getItem(COMPARE_KEY)
+    const list = raw ? JSON.parse(raw) : []
+    return Array.isArray(list) ? list : []
+  } catch {
+    return []
+  }
+}
+
 function AppContent() {
   const [page, setPage] = useState(currentRoute())
   const [product, setProductState] = useState(loadStoredProduct)
+  const [compareItems, setCompareItems] = useState(loadCompareItems)
 
   const setProduct = (item) => {
     setProductState(item)
@@ -60,8 +73,14 @@ function AppContent() {
 
   const handlePreview = (item) => {
     setProduct(item)
-    const win = window.open('#/preview', '_blank')
-    if (!win) navigate('preview')
+  }
+
+  const handleCompare = (items) => {
+    setCompareItems(items)
+    try {
+      sessionStorage.setItem(COMPARE_KEY, JSON.stringify(items))
+    } catch { /* storage unavailable */ }
+    navigate('compare')
   }
 
   const effectivePage =
@@ -78,6 +97,14 @@ function AppContent() {
       {effectivePage === 'history' && (
         <HistoryPage
           onSelect={(item) => { setProduct(item); navigate('results') }}
+          onNavigate={navigate}
+          onCompare={handleCompare}
+        />
+      )}
+      {effectivePage === 'compare' && (
+        <ComparePage
+          items={compareItems}
+          onBack={() => navigate('history')}
           onNavigate={navigate}
         />
       )}

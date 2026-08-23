@@ -1,0 +1,26 @@
+{
+  "name": "Realme Phone",
+  "brand": null,
+  "category": "electronics",
+  "price": null,
+  "currency": "USD",
+  "rating": 4.9,
+  "review_count": 1344,
+  "description": "Realme Phone is a electronics product available through retail catalogs.",
+  "ingredients": [],
+  "tags": [
+    "electronics",
+    "realme",
+    "phone"
+  ],
+  "quality_score": 0.65,
+  "is_valid": true,
+  "errors": [],
+  "issues": [],
+  "sources": [
+    "catalog",
+    "reviews"
+  ],
+  "id": "realme-phone-75decda0",
+  "analyzed_at": "2026-08-23T09:09:52.541404+00:00"
+}
